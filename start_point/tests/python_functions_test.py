@@ -9,7 +9,7 @@ class TestPythonFunctionPractice(unittest.TestCase):
       self.assertEqual( 10, return_10_result )
 
   def test_add(self):
-      add_result = add( 1, 2 )
+      add_result = add( 1,2 )
       self.assertEqual( 3, add_result )
 
   def test_subtract(self):
@@ -43,27 +43,22 @@ class TestPythonFunctionPractice(unittest.TestCase):
       result = number_to_full_month_name( 1 )
       self.assertEqual( "January", result )
 
-  @unittest.skip("delete this line to run the test")
   def test_number_to_full_name__month_3(self):
       result = number_to_full_month_name( 3 )
       self.assertEqual( "March", result )
 
-  @unittest.skip("delete this line to run the test")
   def test_number_to_full_name__month_9(self):
       result = number_to_full_month_name( 9 )
       self.assertEqual( "September", result )
 
-  @unittest.skip("delete this line to run the test")
   def test_number_to_short_month_name__month_1(self):
       first_month_string = number_to_short_month_name( 1 )
       self.assertEqual( "Jan", first_month_string )
 
-  @unittest.skip("delete this line to run the test")
   def test_number_to_short_month_name__month_4(self):
       fourth_month_string = number_to_short_month_name( 4 )
       self.assertEqual( "Apr", fourth_month_string )
 
-  @unittest.skip("delete this line to run the test")
   def test_number_to_short_month_name__month_10(self):
       tenth_month_string = number_to_short_month_name( 10 )
       self.assertEqual( "Oct", tenth_month_string )
@@ -71,23 +66,21 @@ class TestPythonFunctionPractice(unittest.TestCase):
   #Further
 
   #Given the length of a side of a cube calculate the volume
-  @unittest.skip("delete this line to run the test")
+
   def test_volume_of_cube(self):
-    #add test code here
-    pass
+      volume_times_4 = volume_of_cube( 4 )
+      self.assertEqual( 64, volume_times_4 )
 
   #Given a String, return the String reversed
-  @unittest.skip("delete this line to run the test")
+
+# @unittest.skip("delete this line to run the test")
   def test_reverse_string(self):
-    #add test code here
-    pass
+      string_reversal = reverse_string( "Hello hell" )
+      self.assertEqual( "lleh olleH", string_reversal )
 
   #Given a value in farenheit, convert this into celsius.
-  @unittest.skip("delete this line to run the test")
+
+# @unittest.skip("delete this line to run the test")
   def test_fahrenheit_to_celsius(self):
-    #add test code here
-    pass
-
-
-if __name__ == '__main__':
-    unittest.main()
+      conversion = fahrenheit_to_celsius(82)
+      self.assertEqual( 27.8, conversion )
